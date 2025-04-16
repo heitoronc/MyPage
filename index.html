@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Heitor Nobrega</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" opacity="0.12"%3E%3Cdefs%3E%3ClinearGradient id="cyber" x1="0" y1="0" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2311121b"/%3E%3Cstop offset="100%25" stop-color="%236b21a8"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="1600" height="900" fill="url(%23cyber)"/%3E%3Cpath d="M200 200L600 400L1000 200L1400 400M400 600L800 800L1200 600" stroke="%2352d3d8" stroke-width="3" fill="none" opacity="0.6"/%3E%3Ccircle cx="200" cy="200" r="15" fill="%2352d3d8" opacity="0.8"/%3E%3Ccircle cx="600" cy="400" r="20" fill="%23a855f7" opacity="0.8"/%3E%3Ccircle cx="1000" cy="200" r="15" fill="%2352d3d8" opacity="0.8"/%3E%3Ccircle cx="1400" cy="400" r="20" fill="%23a855f7" opacity="0.8"/%3E%3Ccircle cx="400" cy="600" r="18" fill="%2352d3d8" opacity="0.8"/%3E%3Ccircle cx="800" cy="800" r="22" fill="%23a855f7" opacity="0.8"/%3E%3Ccircle cx="1200" cy="600" r="18" fill="%2352d3d8" opacity="0.8"/%3E%3C/svg%3E');
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgba(17, 18, 27, 0.95);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(82, 211, 216, 0.2);
+        }
+
+        nav a {
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #52d3d8;
+        }
+
+        .skill {
+            transition: background-color 0.3s ease;
+        }
+
+        .skill:hover {
+            background-color: #a855f7;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+    <header class="glass-effect text-center py-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">Heitor Nobrega</h1>
+        <p class="text-lg md:text-xl mt-2">Programador Iniciante em C# e Python | Aspirante a Analista em Cibersegurança</p>
+    </header>
+
+    <nav class="glass-effect py-4 text-center sticky top-0 z-10">
+        <a href="#sobre" class="text-lg mx-4 hover:text-cyan-400">Sobre</a>
+        <a href="#projetos" class="text-lg mx-4 hover:text-cyan-400">Projetos</a>
+        <a href="#habilidades" class="text-lg mx-4 hover:text-cyan-400">Habilidades</a>
+        <a href="#contato" class="text-lg mx-4 hover:text-cyan-400">Contato</a>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <section id="sobre" class="glass-effect rounded-lg p-6 mb-8">
+            <h2 class="text-3xl font-semibold text-white mb-4">Sobre Mim</h2>
+            <p class="text-lg">Sou um programador iniciante apaixonado por tecnologia e cibersegurança. Adquirindo experiência em desenvolvimento com C# e Python, Desenvolvendo projetos que vão desde aplicações web até scripts de automação. Meu objetivo é me tornar um analista de cibersegurança, utilizando minhas habilidades de programação para proteger sistemas contra ameaças cibernéticas. Estou sempre aprendendo e buscando novos desafios!</p>
+        </section>
+
+        <section id="projetos" class="glass-effect rounded-lg p-6 mb-8">
+            <h2 class="text-3xl font-semibold text-white mb-4">Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="project-card glass-effect rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-white mb-2">🆔 Simple-Login-System</h3>
+                    <p class="mb-2">Uma aplicação em C# (em desenvolvimento) que implementa um sistema de login com validação de usuário e foco em práticas de segurança, como hashing de senhas.</p>
+                    <p><strong>Tecnologias:</strong> C#, ASP.NET</p>
+                    <p><strong>Status:</strong> Em desenvolvimento</p>
+                    <a href="https://github.com/heitoronc/simple-login-system" target="_blank" class="text-cyan-400 hover:underline">Ver no GitHub</a>
+                </div>
+                <div class="project-card glass-effect rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-white mb-2">🔐 Password-Generator</h3>
+                    <p class="mb-2">Um gerador de senhas seguras (em desenvolvimento) em C# e Python, permitindo personalização de tamanho e caracteres, com foco em segurança de dados.</p>
+                    <p><strong>Tecnologias:</strong> C#, Python</p>
+                    <p><strong>Status:</strong> Em desenvolvimento</p>
+                    <a href="https://github.com/heitoronc/password-generator" target="_blank" class="text-cyan-400 hover:underline">Ver no GitHub</a>
+                </div>
+                <div class="project-card glass-effect rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-white mb-2">🤖 Simple-Chatbot</h3>
+                    <p class="mb-2">Um chatbot básico (em desenvolvimento) em Python, projetado para interações simples e aprendizado de processamento de linguagem natural.</p>
+                    <p><strong>Tecnologias:</strong> Python</p>
+                    <p><strong>Status:</strong> Em desenvolvimento</p>
+                    <a href="https://github.com/heitoronc/simple-chatbot" target="_blank" class="text-cyan-400 hover:underline">Ver no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="glass-effect rounded-lg p-6 mb-8">
+            <h2 class="text-3xl font-semibold text-white mb-4">Habilidades</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">C#</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">MySQL</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Git</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Java</span>
+                <span class="skill bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Segurança de Aplicações</span>
+            </div>
+        </section>
+
+        <section id="contato" class="glass-effect rounded-lg p-6">
+            <h2 class="text-3xl font-semibold text-white mb-4">Contato</h2>
+            <p class="text-lg mb-2">Entre em contato para oportunidades, networking ou colaborações!</p>
+            <p>Email: <a href="mailto:heitoron@outlook.com" class="text-cyan-400 hover:underline">heitoron@outlook.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/heitornobrega1997" target="_blank" class="text-cyan-400 hover:underline">heitornobrega1997</a></p>
+            <p>GitHub: <a href="https://github.com/heitoronc" target="_blank" class="text-cyan-400 hover:underline">heitoronc</a></p>
+        </section>
+    </main>
+
+    <footer class="glass-effect text-center py-4">
+        <p>© 2025 Heitor Nobrega. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll para links de navegação
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
